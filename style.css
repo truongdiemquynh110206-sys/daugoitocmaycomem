@@ -1,7 +1,23 @@
-/* ========================================
+```css
+/* =========================================================
    TÓC MÂY CỎ MỀM
    SAGE GREEN + MILK CREAM
-======================================== */
+   FONT:
+   - Dancing Script: tiêu đề uốn lượn
+   - Quicksand: nội dung rõ ràng
+========================================================= */
+
+
+/* =========================================================
+   GOOGLE FONT
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+
+/* =========================================================
+   ROOT
+========================================================= */
 
 :root {
 
@@ -28,9 +44,9 @@
 }
 
 
-/* ========================================
+/* =========================================================
    RESET
-======================================== */
+========================================================= */
 
 * {
 
@@ -42,6 +58,10 @@
 }
 
 
+/* =========================================================
+   HTML
+========================================================= */
+
 html {
 
     scroll-behavior: smooth;
@@ -49,9 +69,14 @@ html {
 }
 
 
+/* =========================================================
+   BODY
+========================================================= */
+
 body {
 
     font-family:
+        "Quicksand",
         Arial,
         Helvetica,
         sans-serif;
@@ -60,10 +85,75 @@ body {
 
     background: var(--cream);
 
-    line-height: 1.6;
+    line-height: 1.75;
+
+    /*
+       Giúp chữ tiếng Việt không bị dính.
+    */
+    letter-spacing: 0;
+
+    word-spacing: 2px;
+
+    font-weight: 500;
+
+    -webkit-font-smoothing: antialiased;
+
+    text-rendering: optimizeLegibility;
 
 }
 
+
+/* Không để trình duyệt tự chia chữ lung tung */
+
+p,
+li,
+span,
+label,
+button,
+input,
+textarea,
+select,
+a {
+
+    word-break: normal;
+
+    overflow-wrap: break-word;
+
+}
+
+
+/* =========================================================
+   TIÊU ĐỀ UỐN LƯỢN
+========================================================= */
+
+h1,
+h2,
+h3,
+.logo-main,
+.logo-sub,
+.section-heading h2,
+.story-content h2,
+.order-text h2,
+.order-form h3,
+.cart-header h2,
+.product-info h3 {
+
+    font-family:
+        "Dancing Script",
+        cursive;
+
+    font-weight: 600;
+
+    letter-spacing: 0;
+
+    word-spacing: 3px;
+
+}
+
+
+/* =========================================================
+   BODY ELEMENTS
+========================================================= */
 
 body.no-scroll {
 
@@ -86,14 +176,17 @@ input,
 textarea,
 select {
 
-    font: inherit;
+    font-family:
+        "Quicksand",
+        Arial,
+        sans-serif;
 
 }
 
 
-/* ========================================
+/* =========================================================
    HEADER
-======================================== */
+========================================================= */
 
 .header {
 
@@ -104,7 +197,7 @@ select {
     z-index: 1000;
 
     background:
-        rgba(248, 243, 232, 0.95);
+        rgba(248, 243, 232, 0.96);
 
     backdrop-filter: blur(12px);
 
@@ -133,6 +226,10 @@ select {
 }
 
 
+/* =========================================================
+   LOGO
+========================================================= */
+
 .logo {
 
     display: flex;
@@ -148,20 +245,26 @@ select {
 
 .logo-main {
 
-    font-size: 25px;
+    font-size: 31px;
 
-    font-weight: 800;
+    font-weight: 700;
 
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 
 }
 
 
 .logo-sub {
 
-    margin-top: 5px;
+    margin-top: 7px;
+
+    font-family:
+        "Quicksand",
+        sans-serif;
 
     font-size: 10px;
+
+    font-weight: 700;
 
     letter-spacing: 4px;
 
@@ -171,6 +274,10 @@ select {
 
 }
 
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 .navigation {
 
@@ -183,6 +290,10 @@ select {
 
 .navigation a {
 
+    font-family:
+        "Quicksand",
+        sans-serif;
+
     font-size: 14px;
 
     font-weight: 600;
@@ -190,6 +301,8 @@ select {
     color: var(--dark);
 
     transition: 0.3s;
+
+    white-space: nowrap;
 
 }
 
@@ -200,6 +313,10 @@ select {
 
 }
 
+
+/* =========================================================
+   CART BUTTON
+========================================================= */
 
 .cart-button {
 
@@ -220,6 +337,8 @@ select {
     align-items: center;
 
     gap: 8px;
+
+    font-weight: 600;
 
 }
 
@@ -247,9 +366,9 @@ select {
 }
 
 
-/* ========================================
+/* =========================================================
    HERO
-======================================== */
+========================================================= */
 
 .hero {
 
@@ -313,7 +432,7 @@ select {
 
     color: var(--sage-dark);
 
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 
     font-size: 12px;
 
@@ -326,19 +445,25 @@ select {
 
 .hero h1 {
 
-    font-family: Georgia, serif;
+    font-family:
+        "Dancing Script",
+        cursive;
 
-    font-size: clamp(48px, 7vw, 88px);
+    font-size: clamp(58px, 7vw, 100px);
 
-    line-height: 1.04;
+    line-height: 1.08;
 
-    font-weight: 500;
+    font-weight: 600;
 
     color: var(--sage-deep);
 
     max-width: 850px;
 
     margin-bottom: 30px;
+
+    letter-spacing: 0;
+
+    word-spacing: 5px;
 
 }
 
@@ -352,6 +477,8 @@ select {
     font-size: 17px;
 
     line-height: 1.9;
+
+    word-spacing: 2px;
 
 }
 
@@ -369,9 +496,9 @@ select {
 }
 
 
-/* ========================================
+/* =========================================================
    BUTTON
-======================================== */
+========================================================= */
 
 .btn {
 
@@ -391,9 +518,15 @@ select {
 
     cursor: pointer;
 
+    font-family:
+        "Quicksand",
+        sans-serif;
+
     font-weight: 700;
 
     transition: 0.3s;
+
+    white-space: nowrap;
 
 }
 
@@ -443,9 +576,9 @@ select {
 }
 
 
-/* ========================================
+/* =========================================================
    USP
-======================================== */
+========================================================= */
 
 .usp {
 
@@ -501,7 +634,13 @@ select {
 
     color: var(--sage-deep);
 
+    font-family:
+        "Quicksand",
+        sans-serif;
+
     font-size: 17px;
+
+    font-weight: 700;
 
     margin-bottom: 5px;
 
@@ -514,12 +653,14 @@ select {
 
     font-size: 14px;
 
+    line-height: 1.8;
+
 }
 
 
-/* ========================================
+/* =========================================================
    SECTION
-======================================== */
+========================================================= */
 
 .product-section,
 .consult-section {
@@ -546,11 +687,15 @@ select {
 
     color: var(--sage-dark);
 
+    font-family:
+        "Quicksand",
+        sans-serif;
+
     font-size: 11px;
 
     font-weight: 800;
 
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
     margin-bottom: 15px;
 
@@ -559,17 +704,21 @@ select {
 
 .section-heading h2 {
 
-    font-family: Georgia, serif;
+    font-family:
+        "Dancing Script",
+        cursive;
 
-    font-size: clamp(38px, 5vw, 58px);
+    font-size: clamp(46px, 5vw, 68px);
 
     line-height: 1.15;
 
-    font-weight: 500;
+    font-weight: 600;
 
     color: var(--sage-deep);
 
     margin-bottom: 18px;
+
+    letter-spacing: 0;
 
 }
 
@@ -578,12 +727,14 @@ select {
 
     color: var(--brown);
 
+    line-height: 1.8;
+
 }
 
 
-/* ========================================
+/* =========================================================
    PRODUCT
-======================================== */
+========================================================= */
 
 .product-grid {
 
@@ -616,6 +767,10 @@ select {
 }
 
 
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
 .product-image {
 
     height: 480px;
@@ -635,8 +790,34 @@ select {
 
     justify-content: center;
 
+    overflow: hidden;
+
 }
 
+
+/*
+   Nếu có ảnh thật:
+   ảnh sẽ phủ toàn bộ khung.
+*/
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+}
+
+
+/* =========================================================
+   PRODUCT PLACEHOLDER
+========================================================= */
 
 .product-placeholder {
 
@@ -681,25 +862,41 @@ select {
 
 .product-placeholder strong {
 
-    letter-spacing: 5px;
+    font-family:
+        "Dancing Script",
+        cursive;
 
-    font-size: 23px;
+    letter-spacing: 1px;
+
+    font-size: 32px;
+
+    font-weight: 700;
 
 }
 
 
 .product-placeholder small {
 
-    letter-spacing: 4px;
+    font-family:
+        "Quicksand",
+        sans-serif;
+
+    letter-spacing: 3px;
 
     margin-top: 8px;
 
 }
 
 
+/* =========================================================
+   PRODUCT BADGE
+========================================================= */
+
 .product-badge {
 
     position: absolute;
+
+    z-index: 2;
 
     top: 22px;
 
@@ -712,6 +909,10 @@ select {
     padding: 7px 13px;
 
     border-radius: 50px;
+
+    font-family:
+        "Quicksand",
+        sans-serif;
 
     font-size: 10px;
 
@@ -729,6 +930,10 @@ select {
 }
 
 
+/* =========================================================
+   PRODUCT INFO
+========================================================= */
+
 .product-info {
 
     padding: 30px;
@@ -744,7 +949,7 @@ select {
 
     font-weight: 800;
 
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 
     margin-bottom: 8px;
 
@@ -755,13 +960,19 @@ select {
 
     color: var(--sage-deep);
 
-    font-family: Georgia, serif;
+    font-family:
+        "Dancing Script",
+        cursive;
 
-    font-size: 28px;
+    font-size: 34px;
 
-    font-weight: 500;
+    line-height: 1.2;
+
+    font-weight: 600;
 
     margin-bottom: 12px;
+
+    letter-spacing: 0;
 
 }
 
@@ -772,7 +983,11 @@ select {
 
     font-size: 14px;
 
+    line-height: 1.8;
+
     margin-bottom: 25px;
+
+    word-spacing: 2px;
 
 }
 
@@ -815,6 +1030,10 @@ select {
 
     cursor: pointer;
 
+    font-family:
+        "Quicksand",
+        sans-serif;
+
     font-weight: 700;
 
 }
@@ -827,9 +1046,9 @@ select {
 }
 
 
-/* ========================================
+/* =========================================================
    STORY
-======================================== */
+========================================================= */
 
 .story-section {
 
@@ -896,13 +1115,15 @@ select {
 
 .story-image-content strong {
 
-    font-family: Georgia, serif;
+    font-family:
+        "Dancing Script",
+        cursive;
 
-    font-size: 40px;
+    font-size: 52px;
 
-    font-weight: 500;
+    font-weight: 600;
 
-    line-height: 1.2;
+    line-height: 1.15;
 
 }
 
@@ -924,15 +1145,17 @@ select {
 
 .story-content h2 {
 
-    font-family: Georgia, serif;
+    font-family:
+        "Dancing Script",
+        cursive;
 
     color: var(--sage-deep);
 
-    font-size: clamp(38px, 4vw, 58px);
+    font-size: clamp(48px, 4vw, 68px);
 
     line-height: 1.15;
 
-    font-weight: 500;
+    font-weight: 600;
 
     margin-bottom: 25px;
 
@@ -946,6 +1169,10 @@ select {
     margin-bottom: 18px;
 
     max-width: 550px;
+
+    line-height: 1.9;
+
+    word-spacing: 2px;
 
 }
 
@@ -961,9 +1188,9 @@ select {
 }
 
 
-/* ========================================
+/* =========================================================
    CONSULT
-======================================== */
+========================================================= */
 
 .consult-section {
 
@@ -1043,6 +1270,12 @@ select {
 
     transition: 0.3s;
 
+    font-family:
+        "Quicksand",
+        sans-serif;
+
+    line-height: 1.6;
+
 }
 
 
@@ -1066,9 +1299,9 @@ select {
 }
 
 
-/* ========================================
+/* =========================================================
    ORDER
-======================================== */
+========================================================= */
 
 .order-section {
 
@@ -1108,11 +1341,13 @@ select {
 
 .order-text h2 {
 
-    font-family: Georgia, serif;
+    font-family:
+        "Dancing Script",
+        cursive;
 
-    font-size: clamp(42px, 5vw, 65px);
+    font-size: clamp(50px, 5vw, 75px);
 
-    font-weight: 500;
+    font-weight: 600;
 
     line-height: 1.1;
 
@@ -1126,6 +1361,8 @@ select {
     color: #dce5d9;
 
     max-width: 520px;
+
+    line-height: 1.9;
 
 }
 
@@ -1160,20 +1397,22 @@ select {
 
     color: var(--sage-deep);
 
-    font-family: Georgia, serif;
+    font-family:
+        "Dancing Script",
+        cursive;
 
-    font-size: 28px;
+    font-size: 38px;
 
-    font-weight: 500;
+    font-weight: 600;
 
     margin-bottom: 25px;
 
 }
 
 
-/* ========================================
+/* =========================================================
    CART
-======================================== */
+========================================================= */
 
 .cart-modal {
 
@@ -1278,9 +1517,13 @@ select {
 
     color: var(--sage-deep);
 
-    font-family: Georgia, serif;
+    font-family:
+        "Dancing Script",
+        cursive;
 
-    font-weight: 500;
+    font-size: 38px;
+
+    font-weight: 600;
 
 }
 
@@ -1383,11 +1626,19 @@ select {
 
 .cart-item-info h4 {
 
+    font-family:
+        "Quicksand",
+        sans-serif;
+
     font-size: 14px;
+
+    font-weight: 700;
 
     color: var(--sage-deep);
 
     margin-bottom: 5px;
+
+    line-height: 1.5;
 
 }
 
@@ -1478,9 +1729,9 @@ select {
 }
 
 
-/* ========================================
+/* =========================================================
    FOOTER
-======================================== */
+========================================================= */
 
 .footer {
 
@@ -1513,11 +1764,15 @@ select {
 
 .footer-logo {
 
-    font-size: 25px;
+    font-family:
+        "Dancing Script",
+        cursive;
 
-    font-weight: 800;
+    font-size: 38px;
 
-    letter-spacing: 4px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
 
     margin-bottom: 15px;
 
@@ -1529,6 +1784,8 @@ select {
     max-width: 300px;
 
     color: #b9c8b9;
+
+    line-height: 1.8;
 
 }
 
@@ -1562,6 +1819,8 @@ select {
 
     font-size: 13px;
 
+    line-height: 1.8;
+
 }
 
 
@@ -1588,9 +1847,9 @@ select {
 }
 
 
-/* ========================================
+/* =========================================================
    RESPONSIVE
-======================================== */
+========================================================= */
 
 @media (max-width: 1000px) {
 
@@ -1649,7 +1908,7 @@ select {
 
     .hero h1 {
 
-        font-size: 52px;
+        font-size: 58px;
 
     }
 
@@ -1736,7 +1995,7 @@ select {
 
     .logo-main {
 
-        font-size: 20px;
+        font-size: 28px;
 
     }
 
@@ -1744,6 +2003,8 @@ select {
     .logo-sub {
 
         font-size: 8px;
+
+        letter-spacing: 3px;
 
     }
 
@@ -1757,7 +2018,7 @@ select {
 
     .hero h1 {
 
-        font-size: 44px;
+        font-size: 50px;
 
     }
 
@@ -1834,3 +2095,4 @@ select {
     }
 
 }
+```
