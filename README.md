@@ -6,7 +6,7 @@ Website mô phỏng cho bài tập thương mại điện tử, giới thiệu v
 
 | **File**                | **Nội dung**                    |
 | ----------------------- | ------------------------------- |
-| `index.html`            | Trang chủ, danh mục, giỏ hàng   |
+| `index.html`            | Trang chủ, danh mục, giỏ hàng, tư vấn, đặt hàng |
 | `style.css`             | Giao diện                       |
 | `script.js`             | Dữ liệu sản phẩm, lọc, giỏ hàng |
 | `daugoicomem.html`         | Giới thiệu sản phẩm            |
