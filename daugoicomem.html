@@ -1,0 +1,1361 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Dầu gội thảo dược Tóc Mây | Cỏ Mềm
+    </title>
+
+    <meta
+        name="description"
+        content="Dầu gội thảo dược Tóc Mây Cỏ Mềm - chiết xuất Bồ kết và thảo dược truyền thống, giúp làm sạch tóc và da đầu, hỗ trợ cải thiện gàu, gãy rụng và chẻ ngọn."
+    >
+
+
+    <style>
+
+        /* =================================================
+           RESET
+           ================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background: #f8f6ee;
+
+            color: #3f493c;
+
+            line-height: 1.8;
+        }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        /* =================================================
+           HEADER
+           ================================================= */
+
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(253, 251, 243, 0.96);
+
+            border-bottom:
+                1px solid #dfe3d6;
+
+            backdrop-filter: blur(10px);
+        }
+
+
+        .header-container {
+            width: min(1200px, 92%);
+
+            margin: auto;
+
+            min-height: 72px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+
+        .logo {
+            color: #52664c;
+
+            font-size: 24px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            white-space: nowrap;
+        }
+
+
+        .logo span {
+            display: block;
+
+            font-size: 11px;
+
+            font-weight: 500;
+
+            letter-spacing: 1.5px;
+
+            color: #7b8775;
+
+            margin-top: -4px;
+        }
+
+
+        .nav {
+            display: flex;
+
+            align-items: center;
+
+            gap: 28px;
+        }
+
+
+        .nav a {
+            color: #53624d;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition: 0.2s;
+        }
+
+
+        .nav a:hover {
+            color: #829477;
+        }
+
+
+        /* =================================================
+           HERO
+           ================================================= */
+
+        .hero {
+            width: min(1200px, 92%);
+
+            margin: 55px auto 0;
+
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr)
+                minmax(0, 1fr);
+
+            gap: 60px;
+
+            align-items: center;
+        }
+
+
+        .hero-content {
+            padding: 20px 0;
+        }
+
+
+        .hero-label {
+            display: inline-block;
+
+            color: #72836b;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+        }
+
+
+        .hero h1 {
+            color: #3f503b;
+
+            font-size:
+                clamp(34px, 5vw, 60px);
+
+            line-height: 1.15;
+
+            margin-bottom: 25px;
+        }
+
+
+        .hero h1 span {
+            color: #718567;
+        }
+
+
+        .hero-description {
+            color: #596154;
+
+            font-size: 17px;
+
+            line-height: 1.9;
+
+            margin-bottom: 28px;
+        }
+
+
+        .hero-button {
+            display: inline-block;
+
+            padding: 13px 27px;
+
+            background: #65795f;
+
+            color: white;
+
+            border-radius: 30px;
+
+            font-weight: 700;
+
+            transition: 0.25s;
+        }
+
+
+        .hero-button:hover {
+            background: #506448;
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        .hero-image {
+            background: #eeeade;
+
+            border-radius: 25px;
+
+            overflow: hidden;
+
+            min-height: 500px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .hero-image img {
+            width: 100%;
+
+            height: 500px;
+
+            object-fit: cover;
+        }
+
+
+        /* =================================================
+           CONTENT
+           ================================================= */
+
+        .content {
+            width: min(1000px, 92%);
+
+            margin: 90px auto;
+        }
+
+
+        .section {
+            margin-bottom: 75px;
+        }
+
+
+        .section-title {
+            color: #43543f;
+
+            font-size:
+                clamp(25px, 4vw, 36px);
+
+            line-height: 1.3;
+
+            margin-bottom: 22px;
+        }
+
+
+        .section-title::after {
+            content: "";
+
+            display: block;
+
+            width: 55px;
+
+            height: 3px;
+
+            background: #84967b;
+
+            margin-top: 12px;
+
+            border-radius: 5px;
+        }
+
+
+        .section-text {
+            color: #555d53;
+
+            font-size: 16px;
+
+            line-height: 1.9;
+        }
+
+
+        /* =================================================
+           PRODUCT IMAGE
+           ================================================= */
+
+        .product-image-section {
+            margin: 0 auto 75px;
+
+            max-width: 800px;
+
+            text-align: center;
+        }
+
+
+        .product-image-section img {
+            width: 100%;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 15px 45px
+                rgba(65, 76, 59, 0.12);
+        }
+
+
+        .image-caption {
+            color: #777d73;
+
+            font-size: 14px;
+
+            margin-top: 12px;
+
+            font-style: italic;
+        }
+
+
+        /* =================================================
+           BENEFITS
+           ================================================= */
+
+        .benefit-list {
+            list-style: none;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 18px;
+
+            margin-top: 30px;
+        }
+
+
+        .benefit-item {
+            background: #eef1e8;
+
+            border-radius: 15px;
+
+            padding: 22px 24px;
+
+            border:
+                1px solid #e0e5da;
+        }
+
+
+        .benefit-item strong {
+            display: block;
+
+            color: #43553f;
+
+            margin-bottom: 5px;
+
+            font-size: 16px;
+        }
+
+
+        .benefit-item p {
+            color: #5b6258;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =================================================
+           INGREDIENTS
+           ================================================= */
+
+        .ingredient-box {
+            background: #fffdf7;
+
+            border:
+                1px solid #e0e2d7;
+
+            border-radius: 18px;
+
+            padding: 30px;
+
+            margin-top: 25px;
+        }
+
+
+        .ingredient-list {
+            padding-left: 22px;
+        }
+
+
+        .ingredient-list li {
+            color: #555d53;
+
+            margin-bottom: 10px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =================================================
+           STEPS
+           ================================================= */
+
+        .steps {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+            margin-top: 30px;
+        }
+
+
+        .step {
+            background: #edf1e7;
+
+            border-radius: 18px;
+
+            padding: 30px 22px;
+
+            text-align: center;
+        }
+
+
+        .step-number {
+            width: 48px;
+
+            height: 48px;
+
+            margin: 0 auto 15px;
+
+            border-radius: 50%;
+
+            background: #667b60;
+
+            color: white;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 18px;
+
+            font-weight: 700;
+        }
+
+
+        .step h3 {
+            color: #43543f;
+
+            font-size: 18px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .step p {
+            color: #60675d;
+
+            font-size: 14px;
+        }
+
+
+        /* =================================================
+           NOTE
+           ================================================= */
+
+        .note-box {
+            background: #f2ead8;
+
+            border-left:
+                5px solid #8a795b;
+
+            border-radius: 10px;
+
+            padding: 25px 28px;
+
+            margin-top: 25px;
+        }
+
+
+        .note-box h3 {
+            color: #65573e;
+
+            margin-bottom: 12px;
+
+            font-size: 20px;
+        }
+
+
+        .note-list {
+            padding-left: 20px;
+        }
+
+
+        .note-list li {
+            color: #615c4f;
+
+            margin-bottom: 9px;
+        }
+
+
+        /* =================================================
+           FINAL MESSAGE
+           ================================================= */
+
+        .final-message {
+            background: #dfe7d8;
+
+            border-radius: 22px;
+
+            padding: 40px;
+
+            text-align: center;
+
+            margin-top: 70px;
+        }
+
+
+        .final-message p {
+            color: #43543f;
+
+            font-size: 19px;
+
+            line-height: 1.8;
+
+            font-weight: 600;
+        }
+
+
+        /* =================================================
+           FOOTER
+           ================================================= */
+
+        .footer {
+            background: #465743;
+
+            color: #edf1e8;
+
+            padding: 45px 20px;
+
+            text-align: center;
+
+            margin-top: 80px;
+        }
+
+
+        .footer-logo {
+            font-size: 24px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .footer p {
+            color: #dce4d7;
+
+            font-size: 14px;
+
+            margin-top: 5px;
+        }
+
+
+        /* =================================================
+           RESPONSIVE
+           ================================================= */
+
+        @media (max-width: 800px) {
+
+            .header-container {
+                min-height: 65px;
+            }
+
+
+            .nav {
+                gap: 15px;
+            }
+
+
+            .nav a {
+                font-size: 13px;
+            }
+
+
+            .hero {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+
+                margin-top: 30px;
+            }
+
+
+            .hero-image {
+                min-height: auto;
+            }
+
+
+            .hero-image img {
+                height: auto;
+
+                max-height: 550px;
+
+                object-fit: cover;
+            }
+
+
+            .benefit-list {
+                grid-template-columns: 1fr;
+            }
+
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+
+            .content {
+                margin-top: 60px;
+            }
+
+        }
+
+
+        @media (max-width: 520px) {
+
+            .header-container {
+                width: 94%;
+            }
+
+
+            .logo {
+                font-size: 20px;
+            }
+
+
+            .nav a {
+                display: none;
+            }
+
+
+            .hero {
+                width: 94%;
+            }
+
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+
+            .content {
+                width: 94%;
+            }
+
+
+            .section {
+                margin-bottom: 55px;
+            }
+
+
+            .ingredient-box {
+                padding: 22px;
+            }
+
+
+            .final-message {
+                padding: 28px 20px;
+            }
+
+
+            .final-message p {
+                font-size: 17px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         HEADER
+         ================================================= -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                CỎ MỀM
+
+                <span>
+                    THIÊN NHIÊN CHO MÁI TÓC
+                </span>
+            </a>
+
+
+            <nav class="nav">
+
+                <a href="index.html">
+                    Trang chủ
+                </a>
+
+                <a href="#uu-diem">
+                    Ưu điểm
+                </a>
+
+                <a href="#cong-dung">
+                    Công dụng
+                </a>
+
+                <a href="#thanh-phan">
+                    Thành phần
+                </a>
+
+                <a href="#huong-dan">
+                    Hướng dẫn
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         HERO
+         ================================================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    CỎ MỀM NATURAL
+                </div>
+
+
+                <h1>
+
+                    Dầu gội thảo dược
+
+                    <span>
+                        Tóc Mây
+                    </span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Với chiết xuất từ Bồ kết và thảo dược
+                    truyền thống cùng các hoạt chất thiên nhiên,
+                    <strong>Dầu gội thảo dược Tóc Mây</strong>
+                    giúp làm sạch tóc và da đầu, ngăn ngừa và
+                    cải thiện tình trạng tóc gàu, gãy rụng,
+                    chẻ ngọn.
+
+                    Sản phẩm có thể dùng cho cả những người
+                    có da đầu nhạy cảm.
+
+                </p>
+
+
+                <a
+                    href="#uu-diem"
+                    class="hero-button"
+                >
+                    Khám phá sản phẩm
+                </a>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    src="https://static.comem.vn/uploads/August2023/dau-goi-thao-duoc-toc-may-1.jpg"
+                    alt="Dầu gội thảo dược Tóc Mây Cỏ Mềm"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             NỘI DUNG
+             ================================================= -->
+
+        <div class="content">
+
+
+            <!-- HÌNH ẢNH SẢN PHẨM -->
+
+            <section class="product-image-section">
+
+                <img
+                    src="https://static.comem.vn/uploads/August2023/dau-goi-thao-duoc-toc-may-1.jpg"
+                    alt="Dầu gội thảo dược Tóc Mây"
+                >
+
+                <p class="image-caption">
+                    Dầu gội thảo dược Tóc Mây Cỏ Mềm
+                </p>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ƯU ĐIỂM
+                 ================================================= -->
+
+            <section
+                class="section"
+                id="uu-diem"
+            >
+
+                <h2 class="section-title">
+                    Ưu điểm nổi bật dầu gội thảo dược Tóc Mây
+                </h2>
+
+
+                <p class="section-text">
+
+                    Dầu gội Thảo dược
+                    <strong>
+                        “Không silicon, Không sulfate”
+                    </strong>,
+                    phù hợp người có da đầu nhạy cảm.
+
+                    Công thức kết hợp các thảo mộc truyền thống
+                    và hoạt chất thiên nhiên hiện đại giúp phát huy
+                    tác dụng:
+
+                </p>
+
+
+                <div class="benefit-list">
+
+
+                    <div class="benefit-item">
+
+                        <strong>
+                            Bồ kết, Bồ hòn, Cỏ ngũ sắc
+                        </strong>
+
+                        <p>
+                            Chứa saponin giúp tạo bọt tự nhiên,
+                            làm sạch gàu.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-item">
+
+                        <strong>
+                            Hương nhu và Cỏ mần trầu
+                        </strong>
+
+                        <p>
+                            Giúp làm sạch gàu,
+                            hỗ trợ ngăn ngừa rụng tóc.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-item">
+
+                        <strong>
+                            Tinh dầu vỏ Bưởi
+                        </strong>
+
+                        <p>
+                            Góp phần ngăn ngừa tình trạng
+                            rụng tóc.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-item">
+
+                        <strong>
+                            Tang bạch bì
+                        </strong>
+
+                        <p>
+                            Hỗ trợ ngăn ngừa rụng tóc.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-item">
+
+                        <strong>
+                            Tinh dầu Sả chanh
+                        </strong>
+
+                        <p>
+                            Mang hương thơm nhẹ nhàng,
+                            giúp đem lại cảm giác thư giãn
+                            khi gội đầu.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-item">
+
+                        <strong>
+                            Dầu quả Bơ
+                        </strong>
+
+                        <p>
+                            Chứa nhiều vitamin A, C, D, E,
+                            là nguồn bổ sung tuyệt vời cho tóc
+                            khô, phục hồi tóc hư tổn, dưỡng tóc
+                            mềm mượt, chắc khỏe.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefit-item">
+
+                        <strong>
+                            Protein từ đậu Hà Lan
+                        </strong>
+
+                        <p>
+                            Cetearamidoethyldiethonium
+                            Succinoyl Hydrolyzed Pea Protein
+                            có khả năng thay thế silicone,
+                            giúp làm mượt tóc, phục hồi tóc
+                            hư tổn mà không gây bít tắc nang tóc.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CÔNG DỤNG
+                 ================================================= -->
+
+            <section
+                class="section"
+                id="cong-dung"
+            >
+
+                <h2 class="section-title">
+                    Công dụng dầu gội thảo dược Tóc Mây
+                </h2>
+
+
+                <p class="section-text">
+
+                    Dầu gội đầu giúp làm sạch tóc và da đầu,
+                    ngăn ngừa và cải thiện tình trạng tóc gàu,
+                    gãy rụng, chẻ ngọn, cho mái tóc mềm mượt,
+                    chắc khoẻ.
+
+                    Góp phần thúc đẩy sự phát triển
+                    của nang tóc.
+
+                </p>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 THÀNH PHẦN
+                 ================================================= -->
+
+            <section
+                class="section"
+                id="thanh-phan"
+            >
+
+                <h2 class="section-title">
+                    Thành phần của sản phẩm
+                </h2>
+
+
+                <p class="section-text">
+
+                    Dầu gội thảo dược Tóc Mây không chứa silicone,
+                    không sulfate, lành tính, dùng được cho cả
+                    những làn da nhạy cảm nhất với sự kết hợp của:
+
+                </p>
+
+
+                <div class="ingredient-box">
+
+                    <ul class="ingredient-list">
+
+                        <li>
+                            Nước tinh khiết (Purified water)
+                        </li>
+
+                        <li>
+                            Cao dược liệu: quả Bồ kết,
+                            rễ và lá Dâu Tằm, cỏ Mần Trầu,
+                            cỏ Ngũ Sắc, lá Tre, quả Mắc Kham,
+                            quả Bồ Hòn
+                        </li>
+
+                        <li>
+                            Propanediol
+                        </li>
+
+                        <li>
+                            Glycerin
+                        </li>
+
+                        <li>
+                            Tinh dầu vỏ Bưởi
+                            (Citrus maxima peel essential oil)
+                        </li>
+
+                        <li>
+                            Tinh dầu Hương nhu
+                            (Ocimum gratissimum essential oil)
+                        </li>
+
+                        <li>
+                            Tinh dầu Sả chanh
+                            (Cymbopogon citratus essential oil)
+                        </li>
+
+                        <li>
+                            Dầu quả Bơ
+                            (Persea gratissima fruit oil)
+                        </li>
+
+                        <li>
+                            Vitamin E (Tocopherol)
+                        </li>
+
+                        <li>
+                            Phenoxyethanol
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 LỜI NHẮN
+                 ================================================= -->
+
+            <section class="final-message">
+
+                <p>
+
+                    <strong>
+                        Dầu gội thảo dược Tóc Mây
+                    </strong>
+                    là lựa chọn chân ái dành cho mái tóc
+                    của bạn.
+
+                    Nếu bạn đang tìm giải pháp cải thiện
+                    mái tóc mềm mượt, chắc khỏe, đừng bỏ qua
+                    dầu gội thảo dược Tóc Mây nhà Cỏ bạn nhé!
+
+                </p>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 HƯỚNG DẪN SỬ DỤNG
+                 ================================================= -->
+
+            <section
+                class="section"
+                id="huong-dan"
+                style="margin-top: 80px;"
+            >
+
+                <h2 class="section-title">
+                    Các bước gội đầu với dầu gội thảo dược Tóc Mây
+                </h2>
+
+
+                <p class="section-text">
+
+                    Các bước gội đầu với dầu gội thảo dược
+                    Tóc Mây đơn giản như sau:
+
+                </p>
+
+
+                <div class="steps">
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            1
+                        </div>
+
+                        <h3>
+                            Làm ướt tóc
+                        </h3>
+
+                        <p>
+                            Làm ướt tóc và thoa đều dầu gội
+                            lên trên tóc.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            2
+                        </div>
+
+                        <h3>
+                            Massage
+                        </h3>
+
+                        <p>
+                            Thực hiện massage tóc
+                            và da đầu.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            3
+                        </div>
+
+                        <h3>
+                            Xả sạch
+                        </h3>
+
+                        <p>
+                            Xả sạch lại tóc
+                            với nước.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 LƯU Ý
+                 ================================================= -->
+
+            <section class="section">
+
+                <h2 class="section-title">
+                    Lưu ý quan trọng
+                </h2>
+
+
+                <div class="note-box">
+
+                    <h3>
+                        Một số điều cần lưu ý khi sử dụng
+                    </h3>
+
+
+                    <ul class="note-list">
+
+                        <li>
+
+                            Bạn có thể gội 2 lần nếu muốn.
+                            Bên cạnh đó, đừng quên sử dụng kết hợp
+                            với Kem Xả ủ và Serum Tóc Mây để dưỡng tóc,
+                            giúp tóc luôn óng mượt, chắc khỏe.
+
+                        </li>
+
+
+                        <li>
+
+                            Chiết xuất bồ kết đậm đặc, vì thế sẽ gây
+                            cay nhẹ nếu rơi vào mắt.
+
+                            Trong trường hợp này bạn nên rửa sạch lại
+                            bằng nước sạch.
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =================================================
+         FOOTER
+         ================================================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            CỎ MỀM
+        </div>
+
+
+        <p>
+            Dầu gội thảo dược Tóc Mây
+        </p>
+
+
+        <p>
+            Để mái tóc kể câu chuyện của thiên nhiên
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- =================================================
+         JAVASCRIPT
+         ================================================= -->
+
+    <script>
+
+        // Cuộn mượt tới các phần trong trang
+
+        document
+            .querySelectorAll(
+                'a[href^="#"]'
+            )
+            .forEach(link => {
+
+                link.addEventListener(
+                    "click",
+                    function(event) {
+
+                        const target =
+                            document.querySelector(
+                                this.getAttribute("href")
+                            );
+
+                        if (!target) {
+                            return;
+                        }
+
+                        event.preventDefault();
+
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+
+                    }
+                );
+
+            });
+
+    </script>
+
+</body>
+</html>
+```
